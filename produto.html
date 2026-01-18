@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes | Vintage.Eco</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header"></header>
+
+<footer id="main-footer"></footer>
+    
+    <div class="container section" style="margin-top: 80px;">
+        <div class="product-detail-grid">
+            
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="prod-img" src="" alt="">
+                </div>
+                <div class="thumbnails" id="prod-thumbs">
+                    </div>
+            </div>
+
+            <div class="product-info-col">
+                <div class="breadcrumb">Home / <span id="bread-cat">Categoria</span> / <span id="bread-name">Produto</span></div>
+                
+                <h2 class="brand-title" id="prod-brand">MARCA</h2>
+                <h1 class="prod-title" id="prod-name">Nome do Produto</h1>
+                
+                <div class="prod-meta">
+                    <span class="badge-condicao" id="prod-cond">Excelente</span>
+                    <span class="badge-unique">Peça Única</span>
+                </div>
+
+                <div class="price-area">
+                    <span class="big-price" id="prod-price">R$ 0,00</span>
+                    <p class="installments">ou 3x de <span id="prod-installments">R$ 0,00</span> sem juros</p>
+                </div>
+
+                <div class="actions">
+                    <button id="btn-add" class="btn btn-large">Adicionar à Sacola</button>
+                    <button id="btn-wish" class="btn-icon"><i class="far fa-heart"></i></button>
+                </div>
+
+                <div class="accordion">
+                    <details open>
+                        <summary>Descrição & Detalhes</summary>
+                        <p id="prod-desc">...</p>
+                    </details>
+                    <details>
+                        <summary>Medidas (cm)</summary>
+                        <ul id="prod-measures" class="measures-list"></ul>
+                    </details>
+                    <details>
+                        <summary style="color: var(--accent-color);">Impacto Sustentável <i class="fas fa-leaf"></i></summary>
+                        <div class="eco-box">
+                            <p id="prod-eco">...</p>
+                            <small>Ao comprar esta peça usada, você estende seu ciclo de vida.</small>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="related-section section">
+            <h3 class="section-title">Você também pode gostar</h3>
+            <div id="related-grid" class="grid product-grid"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/produto-detalhe.js"></script>
+</body>
+</html>

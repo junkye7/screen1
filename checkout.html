@@ -1,0 +1,49 @@
+<div class="container section">
+    <h2 class="section-title">Finalizar Pedido</h2>
+    <div class="grid" style="grid-template-columns: 1fr 400px; gap: 40px;">
+        
+        <form id="checkout-form">
+            <h3>Dados de Entrega</h3>
+            <div style="display:grid; gap: 15px; margin-top:20px;">
+                <input type="text" placeholder="Nome Completo" required style="padding:15px; border:1px solid #ddd;">
+                <input type="email" placeholder="E-mail" required style="padding:15px; border:1px solid #ddd;">
+                <input type="text" placeholder="Endereço (Rua, Número, Bairro)" required style="padding:15px; border:1px solid #ddd;">
+                <div style="display:flex; gap:10px;">
+                     <input type="text" placeholder="CEP" required style="padding:15px; border:1px solid #ddd; width: 150px;">
+                     <input type="text" placeholder="Cidade/UF" required style="padding:15px; border:1px solid #ddd; flex:1;">
+                </div>
+            </div>
+
+            <h3 style="margin-top:40px;">Pagamento</h3>
+            <div style="margin-top:20px; border:1px solid #ddd; padding:20px; border-radius:4px;">
+                <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                    <input type="radio" name="payment" value="pix" checked>
+                    <span><i class="fas fa-qrcode"></i> PIX (Aprovação Imediata)</span>
+                </label>
+                <hr style="margin:15px 0; border:0; border-top:1px solid #eee;">
+                <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                    <input type="radio" name="payment" value="card">
+                    <span><i class="far fa-credit-card"></i> Cartão de Crédito (Mercado Pago)</span>
+                </label>
+            </div>
+            
+            <button type="submit" class="btn" style="width:100%; margin-top:30px;">Pagar Agora</button>
+        </form>
+
+        <div style="background:#f4f4f4; padding:30px; height:fit-content;">
+            <h3>Resumo</h3>
+            <div id="checkout-items" style="margin: 20px 0;"></div>
+            <div style="border-top:1px solid #ddd; padding-top:20px; display:flex; justify-content:space-between; font-weight:bold; font-size:1.2rem;">
+                <span>Total</span>
+                <span id="checkout-total">R$ 0,00</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="main-footer"></footer>
+
+<header id="main-header"></header>
+
+<script src="js/app.js"></script>
+<script src="js/checkout.js"></script>

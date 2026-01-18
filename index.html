@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brechó de Marca | Moda Sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header id="main-header"></header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Luxo da Segunda Chance</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Curadoria de peças premium, autenticadas e sustentáveis.</p>
+            <a href="produtos.html" class="btn">Ver Coleção</a>
+            <a href="#" class="btn btn-outline">Vender Peça</a>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2 class="section-title">Recém Chegados</h2>
+        <div id="featured-products" class="grid product-grid">
+            <div class="skeleton" style="height:400px; background:#eee;"></div>
+        </div>
+    </section>
+
+<div id="sell-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Venda Conosco</h2>
+        <p>Dê uma nova vida às suas peças de marca. Preencha abaixo e entraremos em contato.</p>
+        
+        <form style="margin-top: 20px; text-align: left;">
+            <div style="margin-bottom: 15px;">
+                <label>Nome Completo</label>
+                <input type="text" class="input-std" required>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label>Marca e Tipo da Peça</label>
+                <input type="text" class="input-std" placeholder="Ex: Bolsa Gucci Dionysus" required>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label>Fotos (Link ou Upload Simulado)</label>
+                <input type="file" class="input-std">
+            </div>
+            <button type="button" class="btn" onclick="alert('Obrigado! Entraremos em contato em 24h.')">Enviar para Avaliação</button>
+        </form>
+    </div>
+</div>
+
+<footer id="main-footer"></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

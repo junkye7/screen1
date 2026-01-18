@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p001",
+    "nome": "Blazer Vintage Oversized",
+    "marca": "Ralph Lauren",
+    "tamanho": "M",
+    "preco": 289.90,
+    "condicao": "Seminovo",
+    "categoria": "casacos",
+    "cor": "Bege",
+    "estoque": 1,
+    "imagem": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80",
+    "imagens": ["https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"],
+    "medidas": { "ombro": "42cm", "busto": "98cm", "comprimento": "70cm" },
+    "eco_impacto": "Economia de 2.000L de água"
+  },
+  {
+    "id": "p002",
+    "nome": "Vestido Seda Pura",
+    "marca": "Farm",
+    "tamanho": "P",
+    "preco": 150.00,
+    "condicao": "Novo com etiqueta",
+    "categoria": "vestidos",
+    "cor": "Floral",
+    "estoque": 1,
+    "imagem": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+    "imagens": ["https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"],
+    "medidas": { "ombro": "38cm", "busto": "88cm", "comprimento": "120cm" },
+    "eco_impacto": "0% de novos tecidos gerados"
+  },
+  {
+    "id": "p003",
+    "nome": "Calça Alfaiataria Linho",
+    "marca": "Zara",
+    "tamanho": "40",
+    "preco": 89.90,
+    "condicao": "Usado - Bom estado",
+    "categoria": "calcas",
+    "cor": "Branco",
+    "estoque": 1,
+    "imagem": "https://images.unsplash.com/photo-1584370848010-d7d637167ebf?auto=format&fit=crop&w=800&q=80",
+    "imagens": ["https://images.unsplash.com/photo-1584370848010-d7d637167ebf?auto=format&fit=crop&w=800&q=80"],
+    "medidas": { "cintura": "80cm", "quadril": "100cm", "comprimento": "95cm" },
+    "eco_impacto": "Moda circular ativa"
+  },
+  {
+    "id": "p004",
+    "nome": "Bolsa Couro Legitimo",
+    "marca": "Schutz",
+    "tamanho": "Único",
+    "preco": 450.00,
+    "condicao": "Seminovo",
+    "categoria": "acessorios",
+    "cor": "Preto",
+    "estoque": 0,
+    "imagem": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+    "imagens": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"],
+    "medidas": { "largura": "30cm", "altura": "20cm" },
+    "eco_impacto": "Reuso de material nobre"
+  }
+]

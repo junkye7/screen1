@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Vintage.Eco</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header"></header>
+
+    <div class="container section" style="margin-top: 80px;">
+        
+        <div class="catalog-header">
+            <h1 class="section-title" style="margin: 0; text-align: left;">Coleção Completa</h1>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Buscar por marca, cor ou tipo...">
+            </div>
+        </div>
+
+        <div class="mobile-controls">
+            <button id="btn-filter-mobile" class="btn-outline"><i class="fas fa-filter"></i> Filtros</button>
+        </div>
+
+        <footer id="main-footer"></footer>
+
+        <div class="catalog-layout">
+            <aside id="filters-sidebar" class="sidebar">
+                <div class="sidebar-header mobile-only">
+                    <h3>Filtros</h3>
+                    <button id="close-filter" style="background:none; font-size:1.5rem;">&times;</button>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-title">Categoria</span>
+                    <label class="filter-option"><input type="checkbox" value="vestidos" class="filter-check"> Vestidos</label>
+                    <label class="filter-option"><input type="checkbox" value="casacos" class="filter-check"> Casacos & Blazers</label>
+                    <label class="filter-option"><input type="checkbox" value="calcas" class="filter-check"> Calças</label>
+                    <label class="filter-option"><input type="checkbox" value="acessorios" class="filter-check"> Acessórios</label>
+                </div>
+                
+                <div class="filter-group">
+                    <span class="filter-title">Condição</span>
+                    <label class="filter-option"><input type="checkbox" value="Novo com etiqueta" class="filter-check-cond"> Novo com etiqueta</label>
+                    <label class="filter-option"><input type="checkbox" value="Seminovo" class="filter-check-cond"> Seminovo</label>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-title">Preço Máximo</span>
+                    <input type="range" min="0" max="2000" value="2000" id="price-range" style="width:100%">
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#666; margin-top:5px;">
+                        <span>R$ 0</span>
+                        <span id="price-value">R$ 2.000+</span>
+                    </div>
+                </div>
+
+                <button id="clear-filters" style="font-size: 0.8rem; text-decoration: underline; background: none; color: #666; margin-top: 10px;">Limpar Filtros</button>
+            </aside>
+
+            <main>
+                <div class="toolbar">
+                    <span id="results-count" style="color:#666; font-size:0.9rem;">Carregando produtos...</span>
+                    <div class="sort-wrapper">
+                        <label for="sort-select">Ordenar por:</label>
+                        <select id="sort-select">
+                            <option value="new">Novidades</option>
+                            <option value="asc">Menor Preço</option>
+                            <option value="desc">Maior Preço</option>
+                            <option value="az">Marca (A-Z)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="catalog-grid" class="grid product-grid">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <button id="load-more-btn" class="btn btn-outline">Carregar Mais</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>
